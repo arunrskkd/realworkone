@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,166 +13,300 @@
   <link href="css/style.min.css" rel="stylesheet">
   <!-- lightbox css -->
   <link href='css/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+  <!-- slick slider css -->
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 
 </head>
 
-  <body>
+<body>
   <div class="header ">
-  		<div class="container">
-		<nav class="navbar navbar-toggleable-md  ">
-	      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="navbar-toggler-icon"></span>
-	      </button>
-	      <a class="navbar-brand" href="#">MODUS <span class="headtext">VERSUS</span></a>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ABOUT</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="#">SERVICES</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">BLOG</a>
-          </li>
+    <div class="container">
+      <nav class="navbar navbar-toggleable-md  ">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+          aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">MODUS
+          <span class="headtext">VERSUS</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">FEATURES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CONTACTS</a>
-          </li>
-         
-        </ul>
-      	<span class="d-block mt-2 ml-2">  <i class="fas fa-search" style="color:#fff"></i></span>	
-      </div>
-    </nav>
-  
-	</div>
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">PORTFOLIO</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FEATURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACTS</a>
+            </li>
+
+          </ul>
+          <span class="d-block mt-2 ml-2">
+            <i class="fas fa-search" style="color:#fff"></i>
+          </span>
+        </div>
+      </nav>
+
+    </div>
   </div>
+
   <!-- lightbox start  -->
-  <div >
+  <div>
     <a href="images/image7.jpg" class="big lightboximg">imgone</a>
-    <a href="images/image12.jpg"  class="lightboximg">imgoneb</a>
-    <a href="images/image1.jpg"  class="lightboximg">imgonec</a>
+    <a href="images/image12.jpg" class="lightboximg">imgoneb</a>
+    <a href="images/image1.jpg" class="lightboximg">imgonec</a>
   </div>
-    <!-- lightbox end  -->
+  <!-- lightbox end  -->
+
+  <!-- map start -->
+  <div class="sectionpop container">
+    <a data-toggle="modal" data-target=".bd-example-modal-lg" lat="51.508742" long="-0.120850" onclick="maping(this)">map</a>
+    <a data-toggle="modal" data-target=".bd-example-modal-lg" lat="41.508742" long="-0.120850" onclick="maping(this)">map2</a>
+  </div>
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div id="map" style="width:100%;height:500px"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- map end -->
+
+  <!-- slider starts -->
+  <div class="container">
+    <div class="slider multiple-items">
+      <div>
+        <div class="video">
+            <iframe class="me-plugin" id="me_youtube_0_container" frameborder="0" allowfullscreen="1" title="YouTube video player"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            <div class="layer">
+              asd
+            </div>
+        </div>
+     
+        
+      </div>
+      <div>
+          <div class="video">
+              <iframe class="me-plugin" id="me_youtube_0_container" frameborder="0" allowfullscreen="1" title="YouTube video player"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+              <div class="layer">
+                asd
+              </div>
+          </div>
+       
+          
+        </div>
+        <div>
+            <div class="video">
+                <iframe class="me-plugin" id="me_youtube_0_container" frameborder="0" allowfullscreen="1" title="YouTube video player"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <div class="layer">
+                  asd
+                </div>
+            </div>
+         
+            
+          </div>
+          <div>
+              <div class="video">
+                  <iframe class="me-plugin" id="me_youtube_0_container" frameborder="0" allowfullscreen="1" title="YouTube video player"
+                  src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                  <div class="layer">
+                    asd
+                  </div>
+              </div>
+           
+              
+            </div>
+            <div>
+                <div class="video">
+                    <iframe class="me-plugin" id="me_youtube_0_container" frameborder="0" allowfullscreen="1" title="YouTube video player"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <div class="layer">
+                      asd
+                    </div>
+                </div>
+             
+                
+              </div>
+              <div>
+                  <div class="video">
+                      <iframe class="me-plugin" id="me_youtube_0_container" frameborder="0" allowfullscreen="1" title="YouTube video player"
+                      src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                      <div class="layer ">
+                        asd
+                      </div>
+                  </div>
+               
+                  
+                </div>
+        
+   
+    </div>
     
-<!-- map start -->
- 
-		<div class="sectionpop container">
-			<a  data-toggle="modal" data-target=".bd-example-modal-lg"  lat="51.508742" long="-0.120850" onclick="maping(this)">map</a>
-      
-      <a  data-toggle="modal" data-target=".bd-example-modal-lg"  lat="41.508742" long="-0.120850" onclick="maping(this)">map2</a>
-		</div>
-		<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-lg">
-				<div class="modal-content">
-					<div id="map" style="width:100%;height:500px"></div>
-				</div>
-			</div>
-		</div>
-		
-
-<!-- map end -->
-
-<!-- map scripts starts -->
-<script>
-function myMap() {
-  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: myCenter, zoom: 5};
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  var marker = new google.maps.Marker({position:myCenter});
-  marker.setMap(map);
-}
-function maping(element){
-var lat = 	$(element).attr('lat');
-var long = 	$(element).attr('long');
-var myCenter = new google.maps.LatLng(lat,long);
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: myCenter, zoom: 5};
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  var marker = new google.maps.Marker({position:myCenter});
-  marker.setMap(map);
-}
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo4UB9ryUDI8esTqLeEjF-JEFRrl0D7g&callback=myMap"></script>
-<!-- map scripts end -->
+  </div>
 
 
-<!-- Bootstrap core JavaScript
+
+
+
+  <!-- slider starts -->
+
+  <!-- map scripts starts -->
+  <script>
+    function myMap() {
+      var myCenter = new google.maps.LatLng(51.508742, -0.120850);
+      var mapCanvas = document.getElementById("map");
+      var mapOptions = { center: myCenter, zoom: 5 };
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+      var marker = new google.maps.Marker({ position: myCenter });
+      marker.setMap(map);
+    }
+    function maping(element) {
+      var lat = $(element).attr('lat');
+      var long = $(element).attr('long');
+      var myCenter = new google.maps.LatLng(lat, long);
+      var mapCanvas = document.getElementById("map");
+      var mapOptions = { center: myCenter, zoom: 5 };
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+      var marker = new google.maps.Marker({ position: myCenter });
+      marker.setMap(map);
+    }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo4UB9ryUDI8esTqLeEjF-JEFRrl0D7g&callback=myMap"></script>
+  <!-- map scripts end -->
+
+
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-3.1.1.slim.min.js" ></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- lightbox js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/simple-lightbox.min.js"></script>
-    <script>
-      $(function(){
-        var $gallery = $('.lightboximg').simpleLightbox();
-    
-        $gallery.on('show.simplelightbox', function(){
-          console.log('Requested for showing');
-        })
-        .on('shown.simplelightbox', function(){
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery-3.1.1.slim.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- lightbox js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/simple-lightbox.min.js"></script>
+  <script>
+    $(function () {
+      var $gallery = $('.lightboximg').simpleLightbox();
+
+      $gallery.on('show.simplelightbox', function () {
+        console.log('Requested for showing');
+      })
+        .on('shown.simplelightbox', function () {
           console.log('Shown');
         })
-        .on('close.simplelightbox', function(){
+        .on('close.simplelightbox', function () {
           console.log('Requested for closing');
         })
-        .on('closed.simplelightbox', function(){
+        .on('closed.simplelightbox', function () {
           console.log('Closed');
         })
-        .on('change.simplelightbox', function(){
+        .on('change.simplelightbox', function () {
           console.log('Requested for change');
         })
-        .on('next.simplelightbox', function(){
+        .on('next.simplelightbox', function () {
           console.log('Requested for next');
         })
-        .on('prev.simplelightbox', function(){
+        .on('prev.simplelightbox', function () {
           console.log('Requested for prev');
         })
-        .on('nextImageLoaded.simplelightbox', function(){
+        .on('nextImageLoaded.simplelightbox', function () {
           console.log('Next image loaded');
         })
-        .on('prevImageLoaded.simplelightbox', function(){
+        .on('prevImageLoaded.simplelightbox', function () {
           console.log('Prev image loaded');
         })
-        .on('changed.simplelightbox', function(){
+        .on('changed.simplelightbox', function () {
           console.log('Image changed');
         })
-        .on('nextDone.simplelightbox', function(){
+        .on('nextDone.simplelightbox', function () {
           console.log('Image changed to next');
         })
-        .on('prevDone.simplelightbox', function(){
+        .on('prevDone.simplelightbox', function () {
           console.log('Image changed to prev');
         })
-        .on('error.simplelightbox', function(e){
+        .on('error.simplelightbox', function (e) {
           console.log('No image found, go to the next/prev');
           console.log(e);
         });
-      });
-    </script>
-    
-  </body>
+    });
+  </script>
+
+<!-- slider js start -->
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    $('.multiple-items').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  });
+</script>
+
+<!-- slider js end -->
+</body>
 </html>
