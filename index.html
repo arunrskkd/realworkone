@@ -1,23 +1,17 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
- 
-
-    <title> Bootstrap</title>
-
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.min.css" rel="stylesheet">
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title> Bootstrap</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
 
   <body>
   <div class="header ">
@@ -65,7 +59,7 @@
 	</div>
   </div>
 	
-
+<!-- map start -->
  
 		<div class="sectionpop container">
 			<a  data-toggle="modal" data-target=".bd-example-modal-lg"  lat="51.508742" long="-0.120850" onclick="maping(this)">map</a>
@@ -79,9 +73,7 @@
 			</div>
 		</div>
 		
-	<div class="loadingone text-center">
-		loadings.....
-	</div>
+
 	
 
 <script>
@@ -106,7 +98,11 @@ var myCenter = new google.maps.LatLng(lat,long);
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo4UB9ryUDI8esTqLeEjF-JEFRrl0D7g&callback=myMap"></script>
-    <!-- Bootstrap core JavaScript
+
+<!-- map end -->
+
+
+<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-3.1.1.slim.min.js" ></script>
@@ -116,13 +112,5 @@ var myCenter = new google.maps.LatLng(lat,long);
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script>
-    
-      $(window).on("load", function() {
-         $(".loadingone").remove();
-          AOS.init();
-        }); 
-    </script>
-
   </body>
 </html>
