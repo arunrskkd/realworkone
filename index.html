@@ -11,6 +11,9 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="css/style.min.css" rel="stylesheet">
+  <!-- lightbox css -->
+  <link href='css/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+
 </head>
 
   <body>
@@ -55,15 +58,23 @@
       	<span class="d-block mt-2 ml-2">  <i class="fas fa-search" style="color:#fff"></i></span>	
       </div>
     </nav>
-
+  
 	</div>
   </div>
-	
+  <!-- lightbox start  -->
+  <div >
+    <a href="images/image7.jpg" class="big lightboximg">imgone</a>
+    <a href="images/image1.jpg" class="lightboximg">imgonea</a>
+    <a href="images/image1.jpg "  class="lightboximg">imgonec</a>
+  </div>
+    <!-- lightbox end  -->
+    
 <!-- map start -->
  
 		<div class="sectionpop container">
 			<a  data-toggle="modal" data-target=".bd-example-modal-lg"  lat="51.508742" long="-0.120850" onclick="maping(this)">map</a>
-			<a  data-toggle="modal" data-target=".bd-example-modal-lg"  lat="41.508742" long="-0.120850" onclick="maping(this)">map2</a>
+      <a href="images/image12.jpg"  class="lightboximg">imgoneb</a>
+      <a  data-toggle="modal" data-target=".bd-example-modal-lg"  lat="41.508742" long="-0.120850" onclick="maping(this)">map2</a>
 		</div>
 		<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-lg">
@@ -74,8 +85,9 @@
 		</div>
 		
 
-	
+<!-- map end -->
 
+<!-- map scripts starts -->
 <script>
 function myMap() {
   var myCenter = new google.maps.LatLng(51.508742,-0.120850);
@@ -98,8 +110,7 @@ var myCenter = new google.maps.LatLng(lat,long);
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo4UB9ryUDI8esTqLeEjF-JEFRrl0D7g&callback=myMap"></script>
-
-<!-- map end -->
+<!-- map scripts end -->
 
 
 <!-- Bootstrap core JavaScript
@@ -112,5 +123,56 @@ var myCenter = new google.maps.LatLng(lat,long);
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- lightbox js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/simple-lightbox.min.js"></script>
+    <script>
+      $(function(){
+        var $gallery = $('.lightboximg').simpleLightbox();
+    
+        $gallery.on('show.simplelightbox', function(){
+          console.log('Requested for showing');
+        })
+        .on('shown.simplelightbox', function(){
+          console.log('Shown');
+        })
+        .on('close.simplelightbox', function(){
+          console.log('Requested for closing');
+        })
+        .on('closed.simplelightbox', function(){
+          console.log('Closed');
+        })
+        .on('change.simplelightbox', function(){
+          console.log('Requested for change');
+        })
+        .on('next.simplelightbox', function(){
+          console.log('Requested for next');
+        })
+        .on('prev.simplelightbox', function(){
+          console.log('Requested for prev');
+        })
+        .on('nextImageLoaded.simplelightbox', function(){
+          console.log('Next image loaded');
+        })
+        .on('prevImageLoaded.simplelightbox', function(){
+          console.log('Prev image loaded');
+        })
+        .on('changed.simplelightbox', function(){
+          console.log('Image changed');
+        })
+        .on('nextDone.simplelightbox', function(){
+          console.log('Image changed to next');
+        })
+        .on('prevDone.simplelightbox', function(){
+          console.log('Image changed to prev');
+        })
+        .on('error.simplelightbox', function(e){
+          console.log('No image found, go to the next/prev');
+          console.log(e);
+        });
+      });
+    </script>
+    
   </body>
 </html>
